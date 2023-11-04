@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header-top d-flex flex-row align-items-center justify-content-between">
+            <div class="left d-flex flex-row align-items-center justify-content-around">
+                <div class="logo">
+                    <img src="assets/img/logo.jpg" alt="" class="logo-img">
+                </div>
+                <div class="time ms-4">
+                    <h4>ДОСТАВКА (С 9:00 до 23:55)</h4>
+                </div>
+                <div class="number ms-4">
+                    <h4>+7(8352)228-061</h4>
+                </div>
+            </div>
+            <div class="right">
+                <div class="button">
+                    <button class="btn-sign btn btn-secondary">
+                        <a href="#" class="sign-link">Войти</a>
+                    </button>
+                </div>
+            </div>            
+        </div>
+        <!-- mobile -->
+        <div class="mobile-top d-flex justify-content-between bg-dark align-items-center d-none" data-bs-theme="dark">
+          <div class="menu">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="menuOffcanvas">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Меню</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+              </div>
+              <div class="offcanvas-body">
+              </div>
+            </div>
+            <div class="menu" role="button" data-bs-target="#menuOffcanvas" data-bs-toggle="offcanvas" aria-controls="menuOffcanvas">
+              <i class="fa-solid fa-bars d-flex text-light"  role="button" data-bs-target="#menuOffcanvas" data-bs-toggle="offcanvas" aria-controls="menuOffcanvas"></i>
+            </div>
+          </div>
+          <div class="logo">
+            <img src="assets/img/logo.jpg" alt="" class="logo-img">
+          </div>
+          <div class="cart-mobile">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileOffcanvas">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Корзина</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+              </div>
+              <div class="offcanvas-body">
+              </div>
+            </div>
+            <div class="mobile" role="button" data-bs-target="#mobileOffcanvas" data-bs-toggle="offcanvas" aria-controls="mobileOffcanvas">
+              <i class="fa-solid fa-cart-shopping text-light" role="button" data-bs-target="#mobileOffcanvas" data-bs-toggle="offcanvas" aria-controls="mobileOffcanvas"></i>
+            </div>
+          </div>
+        </div>
+            <!-- Header - middle -->
+        <div class="header-middle d-flex flex-row w-100 mt-2 justify-content-between  align-items-center sticky-top">
+            <div class="navbar">
+                <ul class="middle-nav d-flex flex-row">
+                    <li class="nav-item"><a href="#" class="nav-link">Завтраки</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Популярные блюда и новинки</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Шаурма/Гиросы</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Римская пицца</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Пицца</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Роллы</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Сеты</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Бургеры/Сэндвичи</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Закуски/Нарезки</a></li>
+                </ul>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title">Корзина</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+                </div>
+                <div class="offcanvas-body">
+                </div>
+              </div>
+              <div class="cart mb-4" role="button" data-bs-target="#cartOffcanvas" data-bs-toggle="offcanvas" aria-controls="cartOffcanvas">
+                <i class="icon fa-solid fa-cart-shopping" role="button" data-bs-target="#cartOffcanvas" data-bs-toggle="offcanvas" aria-controls="cartOffcanvas"></i>
+                <a href="#" class="cart-link">Корзина пуста</a>
+              </div>
+              
+        </div>
+
+        <!-- header - bottom -->
+
+        <div class="header-bottom">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/img/item-1.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/item-2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/img/logo.jpg" class="d-block w-100" alt="SocialLogo">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
