@@ -236,3 +236,17 @@ h4 {
 .welcome {
     margin-bottom: 0;
 }
+
+@media(min-width: 100px) and (max-width:768px){
+    .header-bottom {
+        display: none !important;
+    }
+
+    .carouselExample {
+        display: none;
+    }
+
+    .carousel-inner {
+        display: none;
+    }
+}
