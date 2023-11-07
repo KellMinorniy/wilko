@@ -74,6 +74,7 @@ h4 {
     list-style-type: none;
     flex-wrap: nowrap;
     align-items: center;
+    padding: 10px;
 }
 
 
@@ -88,9 +89,17 @@ h4 {
     padding: 10px;
 }
 
+.slider-mobile {
+    display: none !important;
+}
+
 .icon {
     color: white;
     font-size: large;
+}
+
+.header-middle {
+    background-color: white;
 }
 
 .navbar {
@@ -147,7 +156,6 @@ h4 {
         width: max-content;
         display: flex;
         flex-direction: row;
-        
     }
 
     .navbar {
@@ -162,6 +170,22 @@ h4 {
 
     .nav-link {
         width: max-content;
+    }
+
+    .slider-mobile {
+        display: flex !important;
+    }
+
+    .header-bottom {
+        display: none !important;
+    }
+
+    .carouselExample {
+        display: none;
+    }
+
+    .carousel-inner {
+        display: none;
     }
 }
 
@@ -238,15 +262,7 @@ h4 {
 }
 
 @media(min-width: 100px) and (max-width:768px){
-    .header-bottom {
-        display: none !important;
-    }
+  
 
-    .carouselExample {
-        display: none;
-    }
-
-    .carousel-inner {
-        display: none;
-    }
+    
 }
